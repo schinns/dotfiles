@@ -39,6 +39,9 @@ Plug 'leafgarland/typescript-vim'
 " elixir
 Plug 'elixir-editors/vim-elixir'
 
+" dart
+Plug 'dart-lang/dart-vim-plugin'
+
 "autocomplete
 " Plug 'lifepillar/vim-mucomplete'
 "git diff
@@ -134,4 +137,3 @@ set hlsearch
 let g:javascript_plugin_flow = 1
 
 set t_Co=256
-

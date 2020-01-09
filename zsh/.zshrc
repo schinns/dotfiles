@@ -104,6 +104,8 @@ alias gse="git config user.email 'schinn.ben@gmail.com' && git config user.email
 
 alias lpid="cat /Users/ben.schinn/code/longbow/tmp/pids/server.pid"
 
+alias bx="bundle exec"
+
 run () {
   if [ -z "$1" ]; then
     echo "did you mean 'run server'?"
@@ -125,3 +127,6 @@ run () {
 # erlang/elixir
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
+
+# flutter
+export PATH="$PATH:$HOME/projects/flutter/bin"
