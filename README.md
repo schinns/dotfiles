@@ -1,3 +1,5 @@
-# Configs
+# Dotfiles
 
-dotfiles and configurations
+## Vim
+
+To install plugins open vim and run command `:PlugInstall`
