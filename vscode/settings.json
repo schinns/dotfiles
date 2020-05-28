@@ -1,0 +1,19 @@
+{
+    "workbench.colorTheme": "Atom One Light",
+    "editor.fontSize": 16,
+    "editor.minimap.renderCharacters": false,
+    "window.newWindowDimensions": "inherit",
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": false,
+    "javascript.suggest.enabled": false,
+    "typescript.suggest.enabled": false,
+    "window.zoomLevel": 0,
+    "breadcrumbs.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "files.associations": {
+        "*.gcss": "scss"
+    },
+    "vim.useSystemClipboard": true
+}
