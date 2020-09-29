@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/ben.schinn/.oh-my-zsh"
+export ZSH="/Users/benschinn/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -125,8 +125,36 @@ run () {
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # erlang/elixir
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+# . $HOME/.asdf/asdf.sh
+# . $HOME/.asdf/completions/asdf.bash
 
 # flutter
 export PATH="$PATH:$HOME/projects/flutter/bin"
+
+autoload -U +X bashcompinit && bashcompinit
+autoload -U +X compinit && compinit
+complete -W "$(cat ~/.tsh/complete.txt)" ssh #mx-teleport-bash-complete
+
+tsh status | grep -q EXPIRED && printf "\e[93mYou need to run tlogin\e[0m\n" #mx-teleport-bash-notify
+
+export PATH="$PATH:$HOME/bin" #mx-teleport-bin
+
+alias consul="~/bin/consul"
+alias python="/usr/local/bin/python3"
+
+source /Users/benschinn/.pgvm/pgvm_env
+
+alias oni="/Applications/Onivim2.app/Contents/MacOS/Oni2"
+
+# Git
+alias gp="git push"
+alias gs="git status"
+# alias gpsu="git push --set-upstream origin $(git rev-parse --symbolic-full-name --abbrev-ref HEAD)"
+alias ga="git add"
+alias gc="git commit"
+alias gd="git diff"
+alias gc="git checkout"
+
+# zsh
+alias sz="source ~/.zshrc"
+alias ez="vi ~/.zshrc"
