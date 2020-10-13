@@ -153,8 +153,17 @@ alias gs="git status"
 alias ga="git add"
 alias gc="git commit"
 alias gd="git diff"
-alias gc="git checkout"
 
 # zsh
 alias sz="source ~/.zshrc"
 alias ez="vi ~/.zshrc"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
+
+# mx
+alias nats="PB_CLIENT_TYPE=protobuf/nats/client PB_SERVER_TYPE=protobuf/nats/runner"
