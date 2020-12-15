@@ -167,3 +167,24 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # mx
 alias nats="PB_CLIENT_TYPE=protobuf/nats/client PB_SERVER_TYPE=protobuf/nats/runner"
+rootdir=~
+mx() {
+  "$rootdir/code/$1"
+}
+
+# go
+export GO111MODULE="on"
+export GOPRIVATE="gitlab.mx.com"
+
+# racket
+alias racket="/Applications/Racket-v7.9/bin/racket"
+
+# lambda
+alias lambda="cd ~/projects/presentation/lambda"
+alias new-html="cp ~/tmp/index.html"
+
+# personal projects
+ol() {
+  "$rootdir/projects/occupied-lands/$1"
+}
+
