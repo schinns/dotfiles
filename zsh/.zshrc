@@ -180,7 +180,7 @@ export GOPRIVATE="gitlab.mx.com"
 alias racket="/Applications/Racket-v7.9/bin/racket"
 
 # lambda
-alias lambda="cd ~/projects/presentation/lambda"
+alias lambda="cd ~/projects/lambda-school"
 alias new-html="cp ~/tmp/index.html"
 
 # personal projects
@@ -188,3 +188,5 @@ ol() {
   "$rootdir/projects/occupied-lands/$1"
 }
 
+# Hook direnv into your shell.
+eval "$(direnv hook zsh)"
