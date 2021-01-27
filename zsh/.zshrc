@@ -153,6 +153,11 @@ alias gs="git status"
 alias ga="git add"
 alias gc="git commit"
 alias gd="git diff"
+#
+#   $ cat .git-template/HEAD 
+#   ref: refs/heads/main
+#
+alias gi="git init --template ~/.git-template"
 
 # zsh
 alias sz="source ~/.zshrc"
