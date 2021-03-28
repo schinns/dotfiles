@@ -140,6 +140,8 @@ tsh status | grep -q EXPIRED && printf "\e[93mYou need to run tlogin\e[0m\n" #mx
 export PATH="$PATH:$HOME/bin" #mx-teleport-bin
 
 alias consul="~/bin/consul"
+alias terraform="~/bin/terraform"
+
 alias python="/usr/local/bin/python3"
 
 source /Users/benschinn/.pgvm/pgvm_env
@@ -195,3 +197,6 @@ ol() {
 
 # Hook direnv into your shell.
 eval "$(direnv hook zsh)"
+
+#tmux
+alias tmux-kill="tmux kill-session -a"
