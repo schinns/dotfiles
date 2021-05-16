@@ -182,6 +182,7 @@ mx() {
 # go
 export GO111MODULE="on"
 export GOPRIVATE="gitlab.mx.com"
+export GOPATH="$HOME/go"
 
 # racket
 alias racket="/Applications/Racket-v7.9/bin/racket"
@@ -200,3 +201,7 @@ eval "$(direnv hook zsh)"
 
 #tmux
 alias tmux-kill="tmux kill-session -a"
+
+#db
+export DATABASE_MAX_OPEN_CONNECTIONS=10
+export RPC_WORKER_POOL_SIZE=10
