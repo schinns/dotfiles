@@ -4,15 +4,15 @@ return require('packer').startup(
 
     -- Languages
     use 'neovim/nvim-lspconfig'
-    use 'fatih/vim-go'
-    use 'tpope/vim-rails'
     use 'vim-ruby/vim-ruby'
-    use 'thoughtbot/vim-rspec'
+    -- use 'thoughtbot/vim-rspec'
     use 'pangloss/vim-javascript'
     use 'rodjek/vim-puppet'
-    use 'elixir-editors/vim-elixir'
-		use 'rescript-lang/vim-rescript'
-		use 'jordwalke/vim-reasonml'
+    -- use 'elixir-editors/vim-elixir'
+    -- use 'rescript-lang/vim-rescript'
+    use 'reasonml-editor/vim-reason-plus'
+
+    -- use {'neoclide/coc.nvim', branch = 'master', run = 'yarn install --frozen-lockfile'}
 
     -- Utilities
     use 'christoomey/vim-tmux-navigator'
@@ -20,6 +20,8 @@ return require('packer').startup(
     use 'nvim-telescope/telescope.nvim'
     use 'ervandew/supertab'
     use 'airblade/vim-gitgutter'
-		use 'preservim/nerdtree'
+    use 'preservim/nerdtree'
+    use 'tpope/vim-fugitive'
+		use 'TravonteD/luajob'
   end
 )

@@ -1,5 +1,11 @@
 lspconfig = require('lspconfig')
-lspconfig.gopls.setup{}
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+
+lspconfig.ocamllsp.setup{
+  capabilities = capabilities
+};
+-- lspconfig.gopls.setup{}
 
 -- lspconfig.solargraph.setup{
 --   settings = {
