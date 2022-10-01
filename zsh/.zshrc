@@ -21,7 +21,7 @@ zstyle ':vcs_info:git:*' formats '(%b)'
  
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
-PROMPT='NAME@local ${COLOR_YELLOW}${PWD/#$HOME/~} ${COLOR_MAGENTA}${vcs_info_msg_0_}${COLOR_RESET}${NEWLINE}$ '
+PROMPT='${NAME}@local ${COLOR_YELLOW}${PWD/#$HOME/~} ${COLOR_MAGENTA}${vcs_info_msg_0_}${COLOR_RESET}${NEWLINE}$ '
 
 # set git user
 alias gse="git config user.email 'schinn.ben@gmail.com' && git config user.email"
